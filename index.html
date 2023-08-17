@@ -1,0 +1,51 @@
+<!--
+	Assignment 4 | COMP1073 Client-Side JavaScript
+	MAX MARTENS 200495725
+	KIEREN HUSSEY 200409682
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA & SPACE X API's</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">NASA & SPACE X API's</h1>
+    <!-- Astronomy pic of the day API -->
+    <div class="content-container">
+      <div class="flex-container">
+        <div class="apod-section">
+          <h2 class="apod-heading">Astronomy Picture of the Day</h2>
+          <img id="apodImage" alt="Astronomy Picture of the Day" />
+        </div>
+
+        <!-- EPIC Image of the day API -->
+        <div class="epic-section">
+          <h2 class="epic-heading">EPIC Image of the Day</h2>
+          <img id="epicImage" src="" alt="EPIC Image of the Day" />
+        </div>
+      </div>
+
+      <!-- Mars Rover API -->
+      <div class="rover-section">
+        <h2 class="rover-heading">Mars Rover Photos (Curiosity)</h2>
+        <div id="roverData"></div>
+      </div>
+
+      <!-- SpaceX latest launch API -->
+      <section class="spacex-section">
+        <h2 class="spacex-heading">SpaceX Latest Launch</h2>
+        <div id="newapiData">Loading SpaceX data...</div>
+      </section>
+    </div>
+
+    <footer>
+      <p>NASA APIs available at : <a href="https://api.nasa.gov/">https://api.nasa.gov/</a></p>
+      <p>SpaceX API : <a href="https://docs.spacexdata.com/">https://docs.spacexdata.com/</a></p>
+    </footer>
+  </body>
+</html>
